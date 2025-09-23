@@ -11,7 +11,6 @@ public:
             int offset = target - nums[i];
 
             if(sum.find(offset) != sum.end()){
-                //cout<<"target: "<<target<<"= "<<sum[offset] <<", "<< i<<endl;
                 return {sum[offset], i};
             }else{
                     sum[nums[i]] = i;
